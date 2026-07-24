@@ -22,7 +22,7 @@ export default async function handler(req, res) {
 
   try {
     const url = `https://api.telegram.org/bot${token}/sendMessage`;
-    const body = { chat_id: chatId, text, parse_mode: 'Markdown' };
+    const body = { chat_id: chatId, text };
 
     const tgRes = await fetch(url, {
       method: 'POST',
@@ -33,12 +33,12 @@ export default async function handler(req, res) {
     if (!tgRes.ok) {
       const err = await tgRes.text();
       console.error('Telegram error:', err);
-      return res.status(500).json({ error: 'Telegram send failed' });
+      return res.status(500).json({ error: 'Telegram send failed', detail: err });
     }
 
     return res.status(200).json({ ok: true });
   } catch (err) {
     console.error('Fetch error:', err);
-    return res.status(500).json({ error: 'Internal error' });
+    return res.status(500).json({ error: 'Internal error', detail: err.message });
   }
 }
