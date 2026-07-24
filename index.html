@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grunder — Производство и продажа окон в Бишкеке</title>
+  <meta name="description" content="Grunder — качественные ПВХ окна в Бишкеке. Европейские профили Grunder, Win-open, Accado, Wuco EVO. Замер и установка.">
+  <meta name="keywords" content="окна Бишкек, ПВХ окна, Grunder, Grunder KG, производство окон, пластиковые окна, установка окон, замер окон, окна Кыргызстан">
+  <meta name="author" content="Grunder KG">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://grunder.vercel.app">
+  <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+  <link rel="apple-touch-icon" href="images/logo.jpg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Grunder — Производство и продажа окон в Бишкеке">
+  <meta property="og:description" content="Качественные ПВХ окна в Бишкеке. Европейские профили Grunder, Win-open, Accado, Wuco EVO.">
+  <meta property="og:url" content="https://grunder.vercel.app">
+  <meta property="og:image" content="https://grunder.vercel.app/images/logo.jpg">
+  <meta property="og:locale" content="ru_KG">
+  <meta property="og:site_name" content="Grunder">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Grunder — Производство и продажа окон в Бишкеке">
+  <meta name="twitter:description" content="Качественные ПВХ окна в Бишкеке. Европейские профили Grunder, Win-open, Accado, Wuco EVO.">
+  <meta name="twitter:image" content="https://grunder.vercel.app/images/logo.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css?v=2">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Grunder",
+    "description": "Производство и продажа ПВХ окон в Бишкеке",
+    "url": "https://grunder.vercel.app",
+    "telephone": ["+996770004650", "+996555900063"],
+    "email": "w.open@mail.ru",
+    "image": "https://grunder.vercel.app/images/logo.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "пр. Ленина, 316",
+      "addressLocality": "Бишкек",
+      "addressCountry": "KG"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "14:00" }
+    ],
+    "sameAs": [
+      "https://instagram.com/grunder.kg",
+      "https://wa.me/996555900063"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="logo"><img src="images/logo.jpg" alt="Grunder" class="logo-img"> Grunder</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#services" data-i18n="nav_services">Услуги</a>
+      <a href="#gallery" data-i18n="nav_gallery">Примеры работ</a>
+      <a href="#about" data-i18n="nav_about">О нас</a>
+      <a href="#reviews" data-i18n="nav_reviews">Отзывы</a>
+      <a href="#contact" data-i18n="nav_contact">Контакты</a>
+    </div>
+    <div class="nav-right">
+      <button class="lang-btn" id="langBtn">RU</button>
+      <a href="#booking" class="nav-cta" data-i18n="nav_cta">Заказать замер</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-wrap">
+    <div class="hero-content">
+      <h1 class="hero-title" data-i18n="hero_title">Надёжные окна<br><span>для вашего дома</span></h1>
+      <p class="hero-desc" data-i18n="hero_desc">Grunder — качественные ПВХ окна в Бишкеке. Европейские профили, профессиональный монтаж.</p>
+      <div class="hero-actions">
+        <a href="#booking" class="btn btn-primary" data-i18n="hero_btn">Бесплатный замер</a>
+        <a href="#gallery" class="btn btn-outline" data-i18n="hero_btn2">Примеры работ</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-i18n="hero_stat_profile">Все виды</span>
+          <span class="hero-stat-label" data-i18n="hero_stat_profile_label">ПВХ-профиля</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/hero-photo.jpg" alt="Grunder windows" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" class="section fade-in">
+  <div class="section-inner">
+    <div class="section-label" data-i18n="services_label">Наши услуги</div>
+    <h2 class="section-title" data-i18n="services_title">Полный цикл работ<br>по остеклению</h2>
+    <div class="services-grid">
+      <div class="service-card card-hover">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h20v14H2z"/><path d="M8 21h8"/><path d="M12 17v4"/><path d="M6 7h2"/><path d="M6 10h2"/></svg>
+        </div>
+        <h3 data-i18n="service1_title">Изготовление окон</h3>
+        <p data-i18n="service1_desc">Производство окон любых форм и размеров. Профили Grunder, Win-open, Accado, Wuco EVO.</p>
+      </div>
+      <div class="service-card card-hover">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M12 22V12"/><path d="M3.3 7L12 12l8.7-5"/></svg>
+        </div>
+        <h3 data-i18n="service2_title">Доставка</h3>
+        <p data-i18n="service2_desc">Быстрая доставка окон по Бишкеку. Аккуратная погрузка и разгрузка.</p>
+      </div>
+      <div class="service-card card-hover">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+        </div>
+        <h3 data-i18n="service3_title">Замер и монтаж</h3>
+        <p data-i18n="service3_desc">Выезд замерщика, профессиональный монтаж. Работаем с квартирами, домами, офисами.</p>
+      </div>
+      <div class="service-card card-hover">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="8" width="20" height="13" rx="2"/><path d="M12 2v6"/><path d="M8 21h8"/><path d="M4 15h16"/></svg>
+        </div>
+        <h3 data-i18n="service5_title">Подоконники</h3>
+        <p data-i18n="service5_desc">Высококачественные подоконники — надёжные, прочные, устойчивые к излучениям, не желтеют и служат долго.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section id="why" class="section fade-in">
+  <div class="section-inner">
+    <div class="why-wrap">
+      <div class="why-content">
+        <div class="section-label" data-i18n="why_label">Почему Grunder</div>
+        <h2 class="section-title" data-i18n="why_title">Качество, которому<br>доверяют</h2>
+        <p class="why-text" data-i18n="why_text">Мы производим окна и используем только проверенные материалы и комплектующие от ведущих европейских брендов. Каждое окно проходит контроль качества перед установкой.</p>
+        <div class="why-features">
+          <div class="why-feat">
+            <svg class="why-feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="why_feat2">Сертифицированные профили и фурнитура</span>
+          </div>
+          <div class="why-feat">
+            <svg class="why-feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="why_feat3">Бесплатный замер и консультация</span>
+          </div>
+        </div>
+      </div>
+      <div class="why-bento">
+        <div class="bento-item bento-item-lg" style="background:#e8f0fe;border-radius:12px;overflow:hidden;">
+          <img src="images/why-us.jpg" alt="Installation" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        <div class="bento-item" style="background:#f7f5f0;border-radius:12px;padding:24px;display:flex;flex-direction:column;justify-content:center;">
+          <div style="font-size:24px;font-weight:700;color:#1a365d;">4 бренда</div>
+          <div style="font-size:14px;color:#4a5568;">профилей на выбор</div>
+        </div>
+        <div class="bento-item" style="background:linear-gradient(135deg,#098551,#0fa163);border-radius:12px;padding:24px;display:flex;flex-direction:column;justify-content:center;color:white;">
+          <div style="font-size:24px;font-weight:700;">Все виды</div>
+          <div style="font-size:14px;opacity:.8;">ПВХ-профиля</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TECHNOLOGY ============ -->
+<section id="technology" class="section fade-in">
+  <div class="section-inner">
+    <div class="section-label" data-i18n="tech_label">Конструкция</div>
+    <h2 class="section-title" data-i18n="tech_title">Как устроено<br>наше окно</h2>
+    <div class="tech-grid">
+      <div class="tech-image">
+        <img src="images/tech-profile.jpg" alt="Window profile construction" loading="lazy">
+      </div>
+      <div class="tech-content">
+        <div class="tech-item">
+          <div class="tech-badge" data-i18n="tech_pvc_badge">1</div>
+          <h3 data-i18n="tech_pvc_title">Многокамерный ПВХ-профиль</h3>
+          <p data-i18n="tech_pvc_desc">Обеспечивает эффективную теплоизоляцию и защиту от уличного шума благодаря сложной внутренней структуре камер.</p>
+        </div>
+        <div class="tech-item">
+          <div class="tech-badge" data-i18n="tech_glass_badge">2</div>
+          <h3 data-i18n="tech_glass_title">Энергоэффективный стеклопакет</h3>
+          <p data-i18n="tech_glass_desc">Конструкция из трёх стёкол (двух камер) снижает теплопотери зимой и сохраняет прохладу летом.</p>
+        </div>
+        <div class="tech-item">
+          <div class="tech-badge" data-i18n="tech_reinforce_badge">3</div>
+          <h3 data-i18n="tech_reinforce_title">Внутреннее стальное армирование</h3>
+          <p data-i18n="tech_reinforce_desc">Жёсткий оцинкованный профиль внутри рамы удерживает геометрию конструкции при нагрузках.</p>
+        </div>
+        <div class="tech-item">
+          <div class="tech-badge" data-i18n="tech_seal_badge">4</div>
+          <h3 data-i18n="tech_seal_title">Двухконтурный уплотнитель</h3>
+          <p data-i18n="tech_seal_desc">Герметично закрывает притвор, защищая помещение от сквозняков, пыли и влаги.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery" class="section fade-in">
+  <div class="section-inner">
+    <div class="section-label" data-i18n="gallery_label">Примеры работ</div>
+    <h2 class="section-title" data-i18n="gallery_title">Примеры выполненных объектов</h2>
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item"><img src="images/work-1.jpg" alt="Window 1" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/work-2.jpg" alt="Window 2" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/work-3.jpg" alt="Window 3" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/work-4.jpg" alt="Window 4" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/work-5.jpg" alt="Window 5" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/work-6.jpg" alt="Window 6" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/work-7.jpg" alt="Window 7" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/work-8.jpg" alt="Window 8" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/work-9.jpg" alt="Window 9" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/work-10.jpg" alt="Window 10" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/work-11.jpg" alt="Window 11" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/work-12.jpg" alt="Window 12" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/work-13.jpg" alt="Window 13" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/work-14.jpg" alt="Window 14" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section fade-in">
+  <div class="section-inner">
+    <div class="about-wrap">
+      <div class="about-img">
+        <img src="images/about-photo.jpg" alt="Grunder production" loading="lazy">
+      </div>
+      <div class="about-content">
+        <div class="section-label" data-i18n="about_label">О компании</div>
+        <h2 class="section-title" data-i18n="about_title">Grunder —<br>качество в основе</h2>
+        <p data-i18n="about_text4">GRUNDER — немецкая компания, основанная в 2001 году в Нюрнберге, по производству оконных систем из ПВХ. Благодаря современным технологиям и инновационным разработкам, продукция GRUNDER быстро получила широкое распространение в Европе и стала востребована среди строительных и дизайнерских компаний по всему миру.</p>
+        <p data-i18n="about_text5">Профиль GRUNDER — это высококачественный, экологически чистый материал, проверенный временем. Профиль прошёл все необходимые испытания, что подтверждается актами и сертификатами соответствия Госстандарта Кыргызской Республики. Продукция из этого профиля показывает отличные результаты при эксплуатации и пригодна для использования в любых климатических условиях.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section id="reviews" class="section fade-in">
+  <div class="section-inner">
+    <div class="section-label" data-i18n="reviews_label">Отзывы</div>
+    <h2 class="section-title" data-i18n="reviews_title">Что говорят наши клиенты</h2>
+    <div class="reviews-carousel" id="reviewsCarousel">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text" data-i18n="review1_text">«Заказывали окна для новой квартиры. Очень довольны качеством — в комнатах стало заметно теплее, шум с улицы почти не слышен. Монтажники работали аккуратно, убрали за собой мусор. Рекомендую.»</p>
+        <div class="review-author">
+          <strong data-i18n="review1_name">Айжан</strong>
+          <span data-i18n="review1_detail">Квартира, 3 окна</span>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text" data-i18n="review2_text">«Поставили окна в частном доме. Выбрали профиль Grunder — отличное соотношение цены и качества. Замер приехали на следующий день после звонка. Установили за один день. Всё на высшем уровне.»</p>
+        <div class="review-author">
+          <strong data-i18n="review2_name">Марат</strong>
+          <span data-i18n="review2_detail">Частный дом, 5 окон</span>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text" data-i18n="review3_text">«Сотрудничаем с Grunder уже 3 года для нашего офисного центра. Ставят окна оперативно, качество стабильно хорошее. Ни разу не подвели по срокам. Очень удобно, что работают с юрлицами.»</p>
+        <div class="review-author">
+          <strong data-i18n="review3_name">Алексей</strong>
+          <span data-i18n="review3_detail">Офисный центр, 20 окон</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOKING ============ -->
+<section id="booking" class="section fade-in">
+  <div class="section-inner">
+    <div class="booking-wrap">
+      <div class="booking-content">
+        <div class="section-label" data-i18n="booking_label">Оставьте заявку</div>
+        <h2 class="section-title" data-i18n="booking_title">Вызов замерщика<br>бесплатно</h2>
+        <p data-i18n="booking_desc">Оставьте номер телефона — мы перезвоним в течение 30 минут, согласуем удобное время выезда замерщика. Замер и консультация бесплатно.</p>
+        <div class="booking-feats">
+          <div class="booking-feat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span data-i18n="booking_feat1">Перезвоним за 30 минут</span>
+          </div>
+          <div class="booking-feat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="booking_feat2">Замер и консультация — бесплатно</span>
+          </div>
+        </div>
+      </div>
+      <form class="booking-form" id="bookingForm">
+        <label>
+          <span data-i18n="form_name">Ваше имя</span>
+          <input type="text" name="name" required placeholder="Иван">
+        </label>
+        <label>
+          <span data-i18n="form_phone">Номер телефона</span>
+          <input type="tel" name="phone" required placeholder="+996 700 000 000">
+        </label>
+        <label>
+          <span data-i18n="form_profile">Тип окна</span>
+          <select name="profile" required>
+            <option value="" data-i18n="form_profile_default">— Выберите профиль —</option>
+            <option value="Win-open">Win-open (эконом)</option>
+            <option value="Grunder">Grunder (оптимальный)</option>
+            <option value="Wuco EVO">Wuco EVO (премиум)</option>
+            <option value="Accado">Accado</option>
+          </select>
+        </label>
+        <label>
+          <span data-i18n="form_comment">Комментарий</span>
+          <textarea name="comment" rows="3" placeholder="Количество окон, тип помещения..."></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary btn-full" data-i18n="form_submit">Отправить заявку</button>
+        <p class="form-note" data-i18n="form_note">Нажимая «Отправить», вы соглашаетесь на обработку персональных данных</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section fade-in">
+  <div class="section-inner">
+    <div class="section-label" data-i18n="contact_label">Контакты</div>
+    <h2 class="section-title" data-i18n="contact_title">Свяжитесь с нами</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <h4 data-i18n="contact_addr_title">Адрес</h4>
+            <p><a href="https://go.2gis.com/uMdbC" target="_blank" data-i18n="contact_addr">пр. Ленина, 316, Бишкек (Лебединовка)</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <div>
+            <h4 data-i18n="contact_phone_title">Телефон</h4>
+            <a href="tel:+996770004650">+996 770 004 650</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <div>
+            <h4 data-i18n="contact_hours_title">Режим работы</h4>
+            <p data-i18n="contact_hours">Пн–Пт: 09:00–17:00<br>Сб: 09:00–14:00<br>Вс: выходной</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          <div>
+            <h4 data-i18n="contact_wa_title">Напишите нам</h4>
+            <a href="https://wa.me/996555900063" target="_blank">WhatsApp: +996 555 900 063</a>
+            <a href="mailto:w.open@mail.ru">w.open@mail.ru</a>
+          </div>
+        </div>
+        <div class="contact-social">
+          <a href="https://wa.me/996555900063" target="_blank" aria-label="WhatsApp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </a>
+          <a href="https://instagram.com/grunder.kg" target="_blank" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+          </a>
+          <a href="mailto:w.open@mail.ru" aria-label="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+          </a>
+        </div>
+      </div>
+      <div id="contactMap" class="contact-map"></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="section-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo"><img src="images/logo.jpg" alt="Grunder" class="logo-img"> Grunder</a>
+        <p data-i18n="footer_tag">Производство и продажа окон в Бишкеке</p>
+        <p data-i18n="footer_addr">пр. Ленина, 316 · +996 770 004 650</p>
+      </div>
+      <div class="footer-links">
+        <h4 data-i18n="footer_menu">Меню</h4>
+        <a href="#services" data-i18n="nav_services">Услуги</a>
+        <a href="#gallery" data-i18n="nav_gallery">Примеры работ</a>
+        <a href="#about" data-i18n="nav_about">О нас</a>
+      </div>
+      <div class="footer-links">
+        <h4 data-i18n="footer_contact">Контакты</h4>
+        <a href="tel:+996770004650">+996 770 004 650</a>
+        <a href="https://wa.me/996555900063" target="_blank">WhatsApp</a>
+        <a href="https://instagram.com/grunder.kg" target="_blank">Instagram</a>
+        <a href="mailto:w.open@mail.ru">w.open@mail.ru</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Grunder. All rights reserved.</p>
+      <p><a href="https://go.2gis.com/uMdbC" target="_blank">2GIS</a> · <a href="https://instagram.com/grunder.kg" target="_blank">Instagram</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js?v=2"></script>
+</body>
+</html>
