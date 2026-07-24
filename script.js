@@ -200,10 +200,15 @@ document.getElementById('bookingForm').addEventListener('submit', async (e) => {
         : '✓ Заказ жөнөтүлдү!';
       e.target.reset();
     } else {
-      throw new Error();
+      const err = await res.json().catch(() => ({}));
+      console.error('Form error:', err);
+      throw new Error(err.error || 'http ' + res.status);
     }
-  } catch {
-    btn.textContent = currentLang === 'ru' ? 'Ошибка. Попробуйте позже.' : 'Ката. Кийинчерээк аракет кылыңыз.';
+  } catch (e) {
+    btn.textContent = currentLang === 'ru'
+      ? 'Ошибка. Попробуйте позже.'
+      : 'Ката. Кийинчерээк аракет кылыңыз.';
+    console.error('Form error:', e.message);
   }
 
   setTimeout(() => {
